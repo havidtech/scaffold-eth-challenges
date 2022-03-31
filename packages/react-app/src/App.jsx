@@ -55,7 +55,7 @@ const { ethers } = require("ethers");
 */
 
 /// 📡 What chain are your contracts deployed to?
-const targetNetwork = NETWORKS.localhost; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
+const targetNetwork = NETWORKS.rinkeby; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 
 // 😬 Sorry for all the console logging
 const DEBUG = true;
@@ -728,6 +728,7 @@ function App(props) {
         <Switch>
           <Route exact path="/">
             <div style={{ width: 640, margin: "auto", marginTop: 32, paddingBottom: 32 }}>
+            <p> Hello, I'm glad you made it here. </p>
               <Button
                 disabled={minting}
                 shape="round"
