@@ -313,7 +313,7 @@ export const NETWORKS = {
     name: "rinkeby",
     color: "#e0d068",
     chainId: 4,
-    rpcUrl: `https://rinkeby.infura.io/v3/${INFURA_ID}`,
+    rpcUrl: process.env.REACT_APP_PROVIDER,
     faucet: "https://faucet.rinkeby.io/",
     blockExplorer: "https://rinkeby.etherscan.io/",
   },
